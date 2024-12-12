@@ -1,0 +1,14 @@
+h1 {
+	outline: 1px solid rgb(255, 0, 0);
+	margin: 10%;
+}
+a {
+	color: pink;
+	outline: solid salmon;
+}
+p {
+	outline: 1px dashed rgb(0, 255, 0);
+}
+li {
+	outline: 3px dotted orange;
+}
