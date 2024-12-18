@@ -12,8 +12,43 @@
 	flex: 1;
 	border: 10px solid greenyellow;
 	color: red;
-	height: 10%;
 	justify-self: unset;
+}
+.first_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+}
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 10px;
+	background: green;
+	justify-items: center;
+}
+.grid > div {
+	padding: 0;
+	height: 100%;
+	width: 100px;
+	background: gray;
+	text-align: center;
+	border: 3px;
+	border-radius: 20px;
+}
+.grid > div:hover {
+	background: blueviolet;
+}
+.grid > div > a {
+	border: 1px solid black;
+	display: block;
+	padding: 1em 0em;
+	size: 10em;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 20px;
+}
+.nav2 {
+	grid-row: 2;
 }
 .navbar {
 	display: flex;
@@ -29,7 +64,7 @@
 .navbar > div {
 	padding: 0;
 	height: 100%;
-	width: 100%;
+	width: 100px;
 	background: gray;
 	text-align: center;
 	margin-right: 10%;
@@ -51,5 +86,13 @@
 	text-align: center;
 	flex: 1 1 auto;
 	border-radius: 20px;
+}
+.floating_left {
+	float: left;
+	width: 500px;
+}
+.floating_right {
+	float: right;
+	width: 500px;
 }
 
