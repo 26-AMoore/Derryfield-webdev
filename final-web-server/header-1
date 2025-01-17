@@ -1,0 +1,19 @@
+POST /poll/cast_vote_element/56279 HTTP/1.1
+Host: www.nhsportspage.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0
+Accept: */*;q=0.5, text/javascript, application/javascript, application/ecmascript, application/x-ecmascript
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br, zstd
+Referer: https://www.nhsportspage.com/news_article/show/1328432
+X-CSRF-Token: oTqQaLog7rt9ZgFu5hHyDonU27driWDTacuMb29BL6iXYYX3mNzR9gNQUxTSGp9uFXGNHFLHTKWqXJCh9xp30Q==
+Content-Type: application/x-www-form-urlencoded
+X-Requested-With: XMLHttpRequest
+Content-Length: 43
+Origin: https://www.nhsportspage.com
+Sec-GPC: 1
+Connection: keep-alive
+Cookie: _ngin_session=spqsMXt6RSlRV1X3H1GyOh3wxk4FtSLDLYTJGZt8m3nvBxug%2By4wp9r0Wnia61FEHVKqTZqbM%2BbJ7Y%2FpMIoIA6%2F9N%2FOtrzaEiHduxzWMDhSnGqCSyB7ruWX%2BUvi4YwwBbyXKs2%2F%2FNdebmoQmB4Q8jOpjqmaFiBqxKOnt8ci6wIfi4QgV8JTmdRH320t1DX7o3q8GoQ%3D%3D--ipwUcjG%2F%2FCy8fXxV--aWT%2B9anIri5z04SAyEWoAQ%3D%3D; __cfruid=f1d69a41450797160acc55b98434439f29f9976b-1736990476; _fbp=fb.1.1736990422146.998965538959619281; mprtcl-v4_FB89A2A0={'gs':{'ie':1|'dt':'us1-6ynS5HmBUtc3CDqDKTBu8ysq2WktiOjl'|'cgid':'3bba4eff-e780-4f5c-a7e1-872ed14f6387'|'das':'6f078bac-bb66-4552-9c38-18f94eac6661'|'sid':'26CEE7D2-61B4-4A12-9C08-F31613A04E18'|'les':1736990429447|'ssd':1736990428030|'ia':'eyIxNjAiOnsiY2xpZW50X2lkIjoiOTI1MzMzOTYuMTczNjk5MDQyOCJ9fQ=='|'csm':'WyI2MzU0NzMzMzU0MjkyMzI1ODgwIl0='}|'l':0|'6354733354292325880':{'fst':1736990429447|'ua':'eyJhZ2UiOm51bGwsImRvYiI6bnVsbCwiZ2VuZGVyIjpudWxsfQ=='}|'cu':'6354733354292325880'}; _ga=GA1.1.971553500.1736990429; _gid=GA1.2.1817586841.1736990429; _ga=GA1.1.971553500.1736990429; _gid=GA1.1.1817586841.1736990429; _ga_PQ25JN9PJ8=GS1.1.1736990429.1.1.1736990565.0.0.0; _rollupGA=GA1.2.971553500.1736990429; _rollupGA_gid=GA1.2.2107707711.1736990511; _dc_gtm_UA-821370-1=1; _ga_PJY0BLKBPR=GS1.1.1736990511.1.0.1736990511.60.0.0
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: same-origin
+Priority: u=0

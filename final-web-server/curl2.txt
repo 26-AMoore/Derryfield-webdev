@@ -1,0 +1,33 @@
+curl 'https://www.nhsportspage.com/poll/cast_vote_element/56279' --compressed -X POST -H
+ 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0' -H
+ 'Accept: */*;q=0.5, text/javascript, application/javascript, application/ecmascript, application/x-ecmascript' -H
+ 'Accept-Language: en-US,en;q=0.5' -H
+ 'Accept-Encoding: gzip, deflate, br, zstd' -H
+ 'Referer: https://www.nhsportspage.com/news_article/show/1328432' -H
+ 'X-CSRF-Token: hICA1jVJ5iQLWOQPYrBF6XrkgZgr1l26jpeBSye/vtrfNKzyvdxoiddtp/8H4BanO0kesybsOAKd87C5WcnNCA==' -H
+ 'Content-Type: application/x-www-form-urlencoded' -H
+ 'X-Requested-With: XMLHttpRequest' -H
+ 'Origin: https://www.nhsportspage.com' -H
+ 'Sec-GPC: 1' -H
+ 'Connection: keep-alive' -H
+ 'Cookie:
+ _ngin_session=PLxuo90615KPkdfZXIWoFDBS9y%2BZaGQMwfeFYjovi9QPiDyh3Z%2BLaI0JE8Wwnkd5%2B%2BVkPoipTk%2F3Yd%2FrLU54i7LEqGPQzif8lezS4x%2FDEGmGb%2BAF2jdW4pUvNwXRU9s9qfh57esvVGD12vsPavKrjecKESVlzhrwX%2BmEXUgrzc%2FP1%2FLBLDqT1aKGfeybZ4XWC0eOrA%3D%3D--oz9LOhBihNeBxn9Q--0fi7zGXFdbCyUKPxTmVjAA%3D%3D; __cfruid=081513debc17fcc8e346712abf162f7072ee1e88-1736991784; _fbp=fb.1.1736991728439.142237973869496398; mprtcl-v4_FB89A2A0={\'gs\':
+{\'ie\':
+1|\'dt\':
+\'us1-6ynS5HmBUtc3CDqDKTBu8ysq2WktiOjl\'|\'cgid\':
+\'ab5e500d-7877-45b8-b11b-56ac09ac2340\'|\'das\':
+\'b7d05124-ab47-48ca-a333-1e58df337eb0\'|\'sid\':
+\'E9FF5D30-5B07-4E4F-BC2E-C74E082178D8\'|\'les\':
+1736991733739|\'ssd\':
+1736991731989|\'ia\':
+\'eyIxNjAiOnsiY2xpZW50X2lkIjoiMTgyMzI5MDA1NC4xNzM2OTkxNzMyIn19\'|\'csm\':
+\'WyItNTMwNjY2MzQxNDc2Nzg3ODY0NSJd\'}|\'l\':
+0|\'-5306663414767878645\':
+{\'fst\':
+1736991733723|\'ua\':
+\'eyJhZ2UiOm51bGwsImRvYiI6bnVsbCwiZ2VuZGVyIjpudWxsfQ==\'}|\'cu\':
+\'-5306663414767878645\'}; _ga_PQ25JN9PJ8=GS1.1.1736991732.1.1.1736991736.0.0.0; _ga=GA1.2.1576939762.1736991733; _gid=GA1.2.190489022.1736991733; _ga=GA1.1.1576939762.1736991733; _gid=GA1.1.190489022.1736991733; _gat_mpgaTracker1=1; _rollupGA=GA1.2.1576939762.1736991733; _rollupGA_gid=GA1.2.648860376.1736991739; _dc_gtm_UA-821370-1=1' -H
+ 'Sec-Fetch-Dest: empty' -H
+ 'Sec-Fetch-Mode: cors' -H
+ 'Sec-Fetch-Site: same-origin' -H
+ 'Priority: u=0' --data-raw 'utf8=%E2%9C%93&answer_id=210136&commit=Vote'
