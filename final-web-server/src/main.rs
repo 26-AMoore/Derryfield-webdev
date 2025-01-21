@@ -17,8 +17,7 @@ fn handle_connections(mut stream: TcpStream) -> std::io::Result<()> {
 	let buf_reader = BufReader::new(&stream);
 	let data: Vec<_> = buf_reader
 		.lines()
-		.collect::<Result<Vec<_>, _>>()?
-		.into_iter()
+		.map(|m| m.unwrap())
 		.take_while(|s| !s.is_empty())
 		.collect();
 
