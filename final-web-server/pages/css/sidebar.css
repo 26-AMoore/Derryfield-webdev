@@ -1,0 +1,25 @@
+.sidebar {
+	top: 10px;
+	left: 10px;
+	position: fixed;
+	height: 50px;
+	width: 50px;
+	color: paleturquoise;
+	border: green;
+	background-color: pink;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+
+.bar-element {
+	color: green;
+	height: 40px;
+	width: 40px;
+	background-color: red;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	text-justify: unset;
+}
+

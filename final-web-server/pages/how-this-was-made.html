@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>How this was made</title>
+		<link href="css/style.css" rel="stylesheet">
+		<!--
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+			<script>hljs.highlightAll();</script>
+			-->
+			<!-- !!! All this was made for a highschool webdev class !!! -->
+	</head>
+	<body>
+			<!-- !!! All this was made for a highschool webdev class !!! -->
+		<div class="article">
+
+			<h1>Okay, How did I make this website</h1>
+			<p>This is actually more than a website, I actually wrote the webserver powering it. A webserver is basically the thing giving these pages out to you. I wrote the webserver in a language called <b>Rust󱘗</b>. To get the basic webserver working I followed a <a href="https://doc.rust-lang.org/book/">guide</a>. After I had the basics working I started editing it to fit my needs. Throughout this whole time I was trying to follow the HTTP standard, which helps diffrent things communicate with eachother.</p>
+			<h3>While I have not implemented everything, I have implemented these parts of the HTTP standard:</h3>
+			<ul>
+				<li>Correct reslionse to a GET request</li>
+				<li>Ability to serve arbritrary files</li>
+				<li>Defences to make sure not every file is visible</li>
+				<li>Partially correct error handling</li>
+			</ul>
+			<p>Implementing these basics has given me a stronger understanding of how html, css, and javascript run the web, and doing it all in <b>Rust󱘗</b> gave me an even better understaning of it, speaking of that, what does the code look like?</p>
+			<img src="media/how-this-was-made/main.png" alt="the main() function">
+			<button type="copy" onclick="copymain()">copy</button>
+			<script>
+				function copymain() {
+					navigator.clipboard.writeText("\
+fn main() -> Result<(), Box<dyn std::error::Error>> {\n\
+	let listener = TcpListener::bind(\"0.0.0.0:8080\")?;\n\
+	let mut connections: u64 = 0;\n\
+	for stream in listener.incoming().filter_map(|c| c.ok()) {\n\
+		connections += 1;\n\
+		println!(\"connection num: {}\", connections);\n\
+		_ = thread::spawn(move || {\n\
+			_ = handle_connections(stream);\n\
+			println!(\"finished connection num: {}\", connections)\n\
+			});\n\
+		}\n\
+	Ok(())\n\
+}");
+					alert("copied");
+				}
+			</script>
+			<p>This looks confusing, I know. But it is not as confusing as it seems. The first important part is the <code>let listener = TcpListener::bind("0.0.0.0:8080")?;</code> This line creates a <code>TcpListener</code> and binds it to address <code>0.0.0.0:8080</code>, the address of <code>0.0.0.0</code> means it is from my computer, and the port of <code>:8080</code> means that it is on port 8080. (hey that looks familiar, look at the URL)</p>
+			<p>The next thing this code does is create a loop, using the <br> <code>for stream in listener.incoming().filter_map(|c| c.is_ok())</code>. All you need to know is that this line iterates over the incoming data, filtering to get rid of bad data.</p>
+			<p>The final important part is the <br><code>_ = thread::spawn(move || { _ = handle_connections(stream);});</code>, this creates a new thread and then runs a <code>handle_connections()</code> method that I wrote.</p>
+			<p>The handle connections method parses the data, then formulates a response, when formulating the response the first thing I do is check what file it is asking for, and then try to read that file, after doing some validation. After that I just write the response back to the client.</p>
+			<h1>What do I want to improve?</h1>
+			<p>The main this I want to improve about this website is the parseing. Right now it discardes any data that is not the first line. The data that I throw away generally has useful information, like types of compression I could use and
+			</p>
+		</div>
+		<script src="scripts/selector.js"> </script>
+		<script src="scripts/footer.js"> </script>
+		<script src="sidebar/sidebar.js"></script>
+	</body>
+</html>

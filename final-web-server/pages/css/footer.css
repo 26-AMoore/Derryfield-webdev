@@ -1,0 +1,23 @@
+.footer {
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	size: 100%;
+	justify-content: center;
+}
+.footer > .card {
+	padding-left: 1%;
+	padding-right: 1%;
+	align-self: center;
+	justify-self: center;
+}
+.footer > h1 {
+	color: green;
+}
+img {
+	size: initial;
+}
+.credit {
+	width: 100%;
+	text-align: center;
+}

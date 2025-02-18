@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>0xS0ph13</title>
+		<link href="css/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="article">
+
+			<h1>What I got done</h1>
+			<p>What of my <a href="what-i-hoped-to-do">goals</a> did I accomplish?</p>
+			<h3>Most of them, and even some more!!!</h3>
+			<ol>
+				<li><s>Be able to respond to HTTP requests</s><span> I completed all of these goals</span><ul>
+						<li><s>Read in a tcp stream</s><span> I used the <code>TcpStream</code> object to both read and write to the stream</span></li>
+						<li><s>Parse HTTP header</s><span> I wrote my own parser for just the head of the query</span></li>
+						<li><s>Send data back to the TCP stream</s></li>
+					</ul>
+				</li>
+				<li><s>Be able to get arbritrary files</s><span> All of these are completed too :D</span><ul>
+						<li><s>Parse what file the user is looking for</s><span> This happened in the parser I wrote</span></li>
+						<li><s>Check if that file exists</s><span> I use the <code>fs::exists();</code> function to check if a file exists</span></li>
+						<li><s>Make sure the user is allowed to see that file</s><span> I check to make sure users can only access files in the <code>pages/</code> directory</span></li>
+						<li><s>Read in the file and send it to the user</s><span> I use the <code>fs::read_to_bytes();</code> function to read the file, then I pass the data to the <code>TcpStream</code></span></li>
+					</ul>
+				</li>
+				<li><s>Working 404 page and some other error handleing</s><span>I have completed all of these too!</span><ul>
+						<li><s>If a file that the user is looking for does not exist, show them the 404 page instead</s><span> If <code>fs::exists();</code> returns <code>Ok(false)</code> then I show the 404 page</span></li>
+						<li><s>Respond with a 404 error code</s><span> Same <code>fs::read_to_bytes();</code> as before</span></li>
+						<li><s>If the client sends anything I am unable to parse through, then respond with a 500 error</s><span> If any part of my code fails, I just return a 501 error saying I have not implemented it yet</span></li>
+					</ul>
+				</li>
+			</ol>
+			<h3>I even accomplished some things that werent on that list</h3>
+			<ol>
+				<li>I made this cool website to test it :D <ul>
+					<li>I had to use the html and css I learned to make this</li>
+					<li>I also used some javascript (ewww) to make the selector, the music player on the landing page, and the footer</li>
+					<li>It was really fun to make a website</li>
+				</ul>
+				</li>
+				<li>I also made it multithreaded <ul>
+					<li>Making it multithreaded means that I can respond to more requests at the same time</li>
+					<li>It makes it faster and more reliable</li>
+					<li>It can still be improved by using a thread pool, which limits the amount of threads created</li>
+				</ul></li>
+			</ol>
+		</div>
+		<script src="scripts/selector.js"></script>
+		<script src="scripts/footer.js"></script>
+		<script src="scripts/oneko.js/oneko.js"></script>
+	</body>
+</html>
+
