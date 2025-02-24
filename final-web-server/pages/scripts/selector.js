@@ -147,7 +147,7 @@ function createSurroundingElements(labels, event) {
 			left(event);
 		})
 
-		surroundingElement.textContent = labels[i].slice(0, maxLen);
+		surroundingElement.textContent = labels[i] //labels[i].slice(0, maxLen);
 
 		surroundingElement.style.left = trueX - elemWidth * 1.5 / 2 + offsetX + "px";
 		surroundingElement.style.top = trueY - elemHeight / 2 + offsetY + "px";

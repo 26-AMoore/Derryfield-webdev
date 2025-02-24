@@ -68,6 +68,7 @@ code {
 	background-color: var(--mocha-mauve);
 	color: var(--mocha-mantle);
 	transform: skew(1);
+	overflow: hidden;
 
 }
 @keyframes petals {
@@ -78,10 +79,19 @@ code {
 		scale: 1.1;
 	}
 }
+@keyframes scroll {
+	0% {
+		text-align: left;
+	}
+	100% {
+		text-align: right;
+	}
+}
 .selector-links:hover {
 	background-color: var(--mocha-pink);
 	z-index: 1000;
 	animation: petals .2s ease both ;
+	/* animation: scroll 2s ease alternate; */
 }
 .center {
 	color: yellow;
